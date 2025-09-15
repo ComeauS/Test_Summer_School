@@ -10,8 +10,8 @@ output: html_document
 library(ggplot2)
 my_data=iris
 
-
-
+plot_test=ggplot(my_data)+ geom_point(aes(x=Sepal.Length, y=Sepal.Width, fill=Species))
+ggsave("../Outputs/plot_test.pdf", plot=plot_test)
 ```
 
 ## R Markdown
